@@ -24,6 +24,7 @@ group :assets do
 end
 
 gem 'jquery-rails'
+gem 'turbolinks'
 
 group :development, :test do
   gem 'pry'
