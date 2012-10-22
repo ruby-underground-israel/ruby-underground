@@ -1,4 +1,4 @@
 require 'spec_helper'
 
-describe HomeHelper do
+describe Job do
 end

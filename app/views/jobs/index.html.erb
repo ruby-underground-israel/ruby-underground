@@ -1,0 +1,35 @@
+<h1>Listing jobs</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Company name</th>
+    <th>Company url</th>
+    <th>Location</th>
+    <th>Description</th>
+    <th>Company logo url</th>
+    <th>Contact email</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @jobs.each do |job| %>
+  <tr>
+    <td><%= job.name %></td>
+    <td><%= job.company_name %></td>
+    <td><%= job.company_url %></td>
+    <td><%= job.location %></td>
+    <td><%= job.description %></td>
+    <td><%= job.company_logo_url %></td>
+    <td><%= job.contact_email %></td>
+    <td><%= link_to 'Show', job %></td>
+    <td><%= link_to 'Edit', edit_job_path(job) %></td>
+    <td><%= link_to 'Destroy', job, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Job', new_job_path %>
