@@ -25,6 +25,7 @@ end
 
 gem 'jquery-rails'
 gem 'turbolinks'
+gem 'activeadmin'
 
 group :development, :test do
   gem 'pry'

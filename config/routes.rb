@@ -1,4 +1,8 @@
 RubyUnderground::Application.routes.draw do
+  ActiveAdmin.routes(self)
+
+  devise_for :admin_users, ActiveAdmin::Devise.config
+
   resources :jobs, only: [:index, :show, :new]
 
   # The priority is based upon order of creation:
