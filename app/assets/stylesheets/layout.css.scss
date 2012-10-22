@@ -22,6 +22,76 @@
   font-style: normal;
 }
 
+body {
+  background-image: url('lollypop.png');
+  font-size: 15px;
+  line-height: 24px;
+  min-width: 1355px;
+}
+
 h1, h2 {
   font: 40px/48px 'OstrichSansMedium';
+}
+
+section#main {
+  header {
+    h1 {
+      font: 60px/68px 'FFFTusjBold';
+      display: inline;
+      position: relative;
+      top: 16px;
+      left: 80px;
+    }
+
+    h2 {
+      position: relative;
+      top: -75px;
+      left: 380px;
+      font-size: 24px;
+    }
+
+    height: 220px;
+
+    img#logo {
+      margin-left: 48px;
+    }
+  }
+
+  background-image: url('clean_textile.png');
+  width: 67%;
+  margin-top: 100px;
+  padding: 25px 0 0 75px;
+  border-top: 2px solid #971E18;
+  border-right: 2px solid #971E18;
+  float: left;
+  @include box-shadow(3px 3px 5px #aaa);
+  @include border-radius(0 35px 0 0);
+}
+
+section#content {
+  margin-right: 80px;
+}
+
+aside {
+  float: left;
+  width: 300px;
+  margin: 150px 0 0 30px;
+
+  section#hiring {
+    margin: 40px 0 0 28px;
+  }
+
+  ul#social-media {
+    li {
+      display: inline;
+      list-style: none;
+      margin-right: 4px;
+
+      img {
+        width: 80px;
+        height: 80px;
+        opacity: 0.75;
+      }
+    }
+  }
 }
