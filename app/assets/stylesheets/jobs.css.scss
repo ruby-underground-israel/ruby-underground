@@ -1,3 +1,33 @@
-// Place all the styles related to the jobs controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+@import "bootstrap";
+
+article.job-summary {
+  margin: 20px;
+  padding: 20px;
+  border: 2px dashed #ccc;
+  background: rgba(255, 255, 255, 0.75);
+  @include border-radius(12px);
+
+  &:hover {
+    background: rgba(255, 255, 255, 1);
+    border: 2px dashed #333;
+  }
+}
+
+img.company-logo {
+  position: relative;
+  top: 40px;
+  right: 20px;
+  float: right;
+}
+
+article#job-details {
+  padding: 12px 32px 32px 32px;
+
+  h1, h2, h3 {
+    margin-top: 24px;
+  }
+
+  ul li {
+    list-style-type: circle;
+  }
+}
