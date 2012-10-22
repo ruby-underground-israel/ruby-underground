@@ -1,6 +1,6 @@
 class JobsController < ApplicationController
   def index
-    @jobs = Job.all
+    @jobs = Job.published
 
     respond_to do |format|
       format.html # index.html.erb

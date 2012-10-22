@@ -2,10 +2,16 @@ require 'spec_helper'
 
 describe JobsController do
   describe "GET index" do
-    it "assigns all jobs as @jobs" do
-      job = FactoryGirl.create :job
+    it "assigns published jobs as @jobs" do
+      job = FactoryGirl.create :job, published: true
       get :index
       assigns(:jobs).should eq([job])
+    end
+
+    it "does not assign unpublished jobs in @jobs" do
+      job = FactoryGirl.create :job, published: false
+      get :index
+      assigns(:jobs).should_not be_include(job)
     end
   end
 
