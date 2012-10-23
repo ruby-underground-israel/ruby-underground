@@ -28,6 +28,8 @@ gem 'turbolinks'
 gem 'activeadmin'
 gem 'redcarpet'
 gem 'formtastic'
+gem 'rmagick'
+gem 'carrierwave'
 
 group :development, :test do
   gem 'pry'
