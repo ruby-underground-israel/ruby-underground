@@ -1,7 +1,7 @@
 <p id="notice"><%= notice %></p>
 
 <article id="job-details">
-  <%= image_tag @job.company_logo_url, class: 'company-logo' if @job.company_logo_url? %>
+  <%= image_tag @job.company_logo_url(:thumb), class: 'company-logo' if @job.company_logo? %>
   <h1><%= @job.name %></h1>
   <p class="lead"><%= link_to @job.company_name, @job.company_url %> <small>in</small> <%= @job.location %></p>
   <p><%= markdown @job.description %></p>
