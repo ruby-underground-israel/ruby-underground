@@ -26,6 +26,8 @@ end
 gem 'jquery-rails'
 gem 'turbolinks'
 gem 'activeadmin'
+gem 'redcarpet'
+gem 'formtastic'
 
 group :development, :test do
   gem 'pry'

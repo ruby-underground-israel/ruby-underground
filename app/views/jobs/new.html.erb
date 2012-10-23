@@ -1,5 +1,24 @@
-<h1>New job</h1>
+<h1>Add a New Job</h1>
 
-<%= render 'form' %>
+<%= semantic_form_for(@job) do |f| %>
+  <% if @job.errors.any? %>
+  <div id="error_explanation">
+  <h2><%= pluralize(@job.errors.count, "error") %> prohibited this job from being saved:</h2>
 
-<%= link_to 'Back', jobs_path %>
+  <ul>
+    <% @job.errors.full_messages.each do |msg| %>
+      <li><%= msg %></li>
+  <% end %>
+  </ul>
+</div>
+  <% end %>
+
+<%= f.input :name, placeholder: "Ruby on Rails Developer", label: "Position Name" %>
+<%= f.input :company_name, placeholder: "AwesomeTech Ltd." %>
+<%= f.input :company_url, placeholder: "http://www.awesometech.com" %>
+<%= f.input :location, placeholder: "Tel-Aviv, Israel" %>
+<%= f.input :contact_email, placeholder: "boss@awesometech.com" %>
+<%= f.input :description, label: "Description (Markdown supported)" %>
+<%= f.input :company_logo_url %>
+<%= f.action :submit, :as => :button %>
+<% end %>

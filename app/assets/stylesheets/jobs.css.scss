@@ -31,3 +31,9 @@ article#job-details {
     list-style-type: circle;
   }
 }
+
+form#new_job {
+  input, textarea {
+    width: 75%;
+  }
+}
