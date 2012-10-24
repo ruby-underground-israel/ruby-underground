@@ -70,6 +70,18 @@ section#main {
   float: left;
   @include box-shadow(3px 3px 5px #aaa);
   @include border-radius(0 35px 0 0);
+
+  footer {
+    nav ul {
+      float:right;
+      margin-top: 20px;
+      li {
+        display: inline;
+        list-style: none;
+        margin-right: 40px;
+      }
+    }
+  }
 }
 
 section#content {
@@ -97,5 +109,12 @@ aside {
         opacity: 0.75;
       }
     }
+  }
+}
+
+footer {
+  nav ul li {
+    display: inline;
+    list-style: none;
   }
 }
