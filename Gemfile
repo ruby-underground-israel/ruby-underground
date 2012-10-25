@@ -42,6 +42,7 @@ end
 group :development do
   gem 'guard-rspec'
   gem 'guard-spork'
+  gem 'rack-livereload'
   gem 'guard-livereload'
 end
 
