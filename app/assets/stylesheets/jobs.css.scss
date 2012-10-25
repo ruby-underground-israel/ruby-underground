@@ -1,18 +1,5 @@
 @import "bootstrap";
 
-article.job-summary {
-  margin: 20px;
-  padding: 20px;
-  border: 2px dashed #ccc;
-  background: rgba(255, 255, 255, 0.75);
-  @include border-radius(12px);
-
-  &:hover {
-    background: rgba(255, 255, 255, 1);
-    border: 2px dashed #333;
-  }
-}
-
 img.company-logo {
   position: relative;
   top: 40px;
