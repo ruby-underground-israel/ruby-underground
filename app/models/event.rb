@@ -1,7 +1,8 @@
 class Event < ActiveRecord::Base
   attr_accessible :description, :lat, :lon, :name, :time, :url
+  scope :upcoming, -> { where("time > ?", Time.now) }
 
   def self.next
-    order("time asc").first
+    upcoming.first
   end
 end
