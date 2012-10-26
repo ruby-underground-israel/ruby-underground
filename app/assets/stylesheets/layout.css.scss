@@ -27,40 +27,48 @@ body {
   font-size: 15px;
   line-height: 24px;
   min-width: 1355px;
+
+  a {
+    text-decoration: none;
+  }
 }
 
 h1, h2 {
   font: 40px/48px 'OstrichSansMedium';
 }
 
-section#main {
-  header {
-    h1 {
-      font: 60px/68px 'FFFTusjBold';
-      display: inline;
-      position: relative;
-      top: 16px;
-      left: 80px;
+body>header {
+  margin-top: 20px;
 
-      a {
-        color: #971E18;
-      }
-    }
+  h1 {
+    font: 60px/68px 'FFFTusjBold';
+    display: inline;
+    position: relative;
+    top: 16px;
+    left: 80px;
 
-    h2 {
-      position: relative;
-      top: -75px;
-      left: 380px;
-      font-size: 24px;
-    }
-
-    height: 220px;
-
-    img#logo {
-      margin-left: 48px;
+    a {
+      color: #971E18;
     }
   }
 
+  h2 {
+    position: relative;
+    top: -75px;
+    left: 380px;
+    font-size: 22px;
+  }
+
+  height: 0px;
+
+  img#logo {
+    float: right;
+    margin: 24px 100px;
+    width: 198px;
+  }
+}
+
+section#main {
   background-image: url('clean_textile.png');
   width: 67%;
   margin-top: 100px;
@@ -91,7 +99,7 @@ section#content {
 aside {
   float: left;
   width: 300px;
-  margin: 150px 0 0 30px;
+  margin-left: 30px;
 
   section#hiring {
     margin: 40px 0 0 28px;

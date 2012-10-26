@@ -8,12 +8,13 @@
 </head>
 <body>
 
-<section id="main">
   <header>
     <%= link_to image_tag('logo.png', id: 'logo'), root_path %>
     <h1><%= link_to "Ruby Underground", root_path %></h1>
     <h2>The Israeli Ruby and Rails Community</h2>
   </header>
+
+<section id="main">
   <section id="content">
     <%= yield %>
   </section>
