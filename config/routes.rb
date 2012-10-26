@@ -1,11 +1,11 @@
 RubyUnderground::Application.routes.draw do
-  resources :events
+  resources :videos, only: [:show, :index]
+  resources :events, only: [:show, :index]
+  resources :jobs, except: [:update, :destroy]
 
   ActiveAdmin.routes(self)
 
   devise_for :admin_users, ActiveAdmin::Devise.config
-
-  resources :jobs, except: [:update, :destroy]
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

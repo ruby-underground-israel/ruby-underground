@@ -1,5 +1,5 @@
 <article class="event clearfix">
-<%= image_tag "http://maps.googleapis.com/maps/api/staticmap?center=#{event.lat},#{event.lon}&markers=color:red%7Ccolor:red%7Clabel:C%7C#{event.lat},#{event.lon}&zoom=16&size=350x200&sensor=false", id: "event-venue" %>
+<%= image_tag "http://maps.googleapis.com/maps/api/staticmap?center=#{event.lat},#{event.lon}&markers=color:red%7Ccolor:red%7Clabel:C%7C#{event.lat},#{event.lon}&zoom=16&size=350x200&sensor=false", class: "event-venue" %>
   <h2><%= event.name %></h2>
   <p><strong>When:</strong> <time><%= event.time %></time></p>
   <p><%= event.description %></h2>
