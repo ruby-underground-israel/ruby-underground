@@ -1,6 +1,13 @@
-article.event {
-  img.event-venue {
+@mixin slot {
+  img {
     float: left;
     margin-right: 20px;
   }
+}
+article.event {
+  @include slot;
+}
+
+article.video {
+  @include slot;
 }
