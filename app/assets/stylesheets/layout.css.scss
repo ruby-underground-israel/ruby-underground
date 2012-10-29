@@ -22,6 +22,10 @@
   font-style: normal;
 }
 
+html, body {
+  height: 100%;
+}
+
 body {
   background-image: url('lollypop.png');
   font-size: 15px;
@@ -71,6 +75,7 @@ body>header {
 section#main {
   background-image: url('clean_textile.png');
   width: 67%;
+  height: 100%;
   margin-top: 100px;
   padding: 25px 0 0 75px;
   border-top: 2px solid #971E18;
