@@ -73,9 +73,11 @@ body>header {
 }
 
 section#main {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
   background-image: url('clean_textile.png');
   width: 67%;
-  height: 100%;
   margin-top: 100px;
   padding: 25px 0 0 75px;
   border-top: 2px solid #971E18;
