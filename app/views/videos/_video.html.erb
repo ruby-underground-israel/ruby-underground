@@ -1,6 +1,6 @@
 <article class="video clearfix">
   <%= image_tag video.thumbnail, class: "video-thumbnail" %>
-  <h2><%= video.title %></h2>
+  <h2><%= link_to video.title, "http://www.youtube.com/watch?v=#{video.youtube_id}", target: "_blank" %></h2>
   <p><strong>Recorded:</strong> <time><%= video.created_at %></time></p>
   <p><%= video.description %></h2>
 </article>
