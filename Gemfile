@@ -31,6 +31,7 @@ gem 'formtastic'
 gem 'rmagick'
 gem 'carrierwave'
 gem 'fog', '~> 1.3.1'
+gem 'httparty'
 
 group :development, :test do
   gem 'pry'
