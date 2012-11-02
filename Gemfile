@@ -32,14 +32,18 @@ gem 'rmagick'
 gem 'carrierwave'
 gem 'fog', '~> 1.3.1'
 gem 'httparty'
+gem 'chronic'
+
+group :test do
+  gem 'webmock'
+  gem 'vcr'
+end
 
 group :development, :test do
   gem 'pry'
   gem 'sqlite3'
   gem 'rspec-rails'
   gem 'factory_girl_rails'
-  gem 'webmock'
-  gem 'vcr'
 end
 
 group :development do

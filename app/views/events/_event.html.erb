@@ -1,7 +1,6 @@
 <article class="event clearfix">
 <%= image_tag "http://maps.googleapis.com/maps/api/staticmap?center=#{event.lat},#{event.lon}&markers=color:red%7Ccolor:red%7Clabel:C%7C#{event.lat},#{event.lon}&zoom=16&size=350x200&sensor=false", class: "event-venue" %>
-  <h2><%= event.name %></h2>
-  <p><strong>When:</strong> <time><%= event.time %></time></p>
-  <p><%= event.description %></h2>
-<%= link_to "RSVP to this event", event.url %>
+  <h2><%= link_to(event.name, event.event_url) %></h2>
+  <p><strong>When:</strong> <time><%= event.time.in_time_zone('Jerusalem') %></time></p>
+  <p><%= markdown(event.description) if event.description? %></h2>
 </article>

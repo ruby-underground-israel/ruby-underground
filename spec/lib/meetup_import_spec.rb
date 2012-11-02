@@ -6,7 +6,7 @@ describe MeetupImport do
   let(:values) {{ name: "Blocks in-depth",
                   description: "A fun meetup",
                   venue: OpenStruct.new(lat: 32.070127, lon: 34.793795),
-                  time: 1353944700000,
+                  time: 1357034400000,
                   event_url: "http://meetup.rubyunderground.co.il/events/79894502/"
   }}
 
@@ -16,7 +16,7 @@ describe MeetupImport do
       actual.description.should == "A fun meetup"
       actual.lat.should == "32.070127"
       actual.lon.should == "34.793795"
-      actual.time.should == 1353944700000
+      actual.time.should == Chronic.parse('January 1st, 2013')
       actual.event_url.should == "http://meetup.rubyunderground.co.il/events/79894502/"
     end
   end
