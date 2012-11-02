@@ -1,6 +1,6 @@
 class JobsController < ApplicationController
   def index
-    @jobs = Job.published
+    @jobs = Job.published.shuffle
 
     respond_to do |format|
       format.html # index.html.erb
