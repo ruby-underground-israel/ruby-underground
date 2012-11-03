@@ -1,0 +1,15 @@
+%p#notice= notice
+#job-details
+  = image_tag @job.company_logo_url(:thumb), class: 'company-logo' if @job.company_logo?
+  %h1= @job.name
+  %p.lead
+    = link_to @job.company_name, @job.company_url
+    %small in
+    = @job.location
+  %p= markdown @job.description
+
+  %p
+    %b Contact email:
+    = @job.contact_email
+
+= link_to 'Back', jobs_path

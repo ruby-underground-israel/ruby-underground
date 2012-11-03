@@ -33,6 +33,7 @@ gem 'carrierwave'
 gem 'fog', '~> 1.3.1'
 gem 'httparty'
 gem 'chronic'
+gem 'haml'
 
 group :test do
   gem 'webmock'
