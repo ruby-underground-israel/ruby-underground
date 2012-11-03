@@ -34,6 +34,7 @@ gem 'fog', '~> 1.3.1'
 gem 'httparty'
 gem 'chronic'
 gem 'haml'
+gem 'browsernizer'
 
 group :test do
   gem 'webmock'
