@@ -1,0 +1,20 @@
+%h1 Add a New Job
+
+= semantic_form_for @job, html: {multipart: true} do |f|
+  - if @job.errors.any?
+    #error_explanation
+      %h2
+        = pluralize(@job.errors.count, "error")
+        prohibited this job from being saved:
+      %ul
+        - @job.errors.full_messages.each do |msg|
+          %li= msg
+
+  = f.input :name, placeholder: "Ruby on Rails Developer", label: "Position name"
+  = f.input :company_name, placeholder: "AwesomeTech Ltd."
+  = f.input :company_url, placeholder: "http://www.awesometech.com"
+  = f.input :company_logo
+  = f.input :location, placeholder: "Tel-Aviv, Israel"
+  = f.input :contact_email, placeholder: "boss@awesometech.com"
+  = f.input :description, label: "Description (markdown supported)"
+  = f.action :submit, :as => :button

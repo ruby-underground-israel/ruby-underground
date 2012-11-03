@@ -1,0 +1,7 @@
+%article
+  = image_tag job.company_logo_url(:thumb), class: 'company-logo' if job.company_logo?
+  %h2= link_to job.name, job
+  %p.lead
+    = link_to job.company_name, url_with_protocol(job.company_url), target: "_blank"
+    %small in
+    = job.location
