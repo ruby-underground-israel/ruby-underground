@@ -1,4 +1,34 @@
 @import "bootstrap";
+@import "bourbon";
+
+@mixin thoughtbot {
+  @include linear-gradient(top, #ee432e 0%, #c63929 50%, #b51700 50%, #891100 100%);
+  border: 1px solid #951100;
+  border-radius: 5px;
+  @include box-shadow(inset 0px 0px 0px 1px rgba(255, 115, 100, 0.4), 0 1px 3px #333);
+  color: #fff;
+  font: bold 20px/1 "helvetica neue", helvetica, arial, sans-serif;
+  padding: 12px 0 14px 0;
+  text-align: center;
+  text-shadow: 0px -1px 1px rgba(0, 0, 0, .8);
+  display: inline-block;
+  width: 280px;
+  margin: 10px 0 10px;
+
+  &:hover {
+    @include linear-gradient(top, #f37873 0%, #db504d 50%, #cb0500 50%, #a20601 100%);
+    cursor: pointer;
+  }
+
+  &:active {
+    @include linear-gradient(top, #d43c28 0%, #ad3224 50%, #9c1500 50%, #700d00 100%);
+    @include box-shadow(inset 0px 0px 0px 1px rgba(255, 115, 100, 0.4));
+  }
+}
+
+.thoughtbot {
+  @include thoughtbot;
+}
 
 @font-face {
   font-family: 'FFFTusjBold';
@@ -33,7 +63,7 @@ body {
   min-width: 1440px;
 
   a {
-    text-decoration: none;
+    text-decoration: none !important;
   }
 }
 
@@ -41,35 +71,29 @@ h1, h2 {
   font: 40px/48px 'OstrichSansMedium';
 }
 
-body>header {
-  margin-top: 20px;
+#main>header {
+  margin: 10px 0 110px;
 
   h1 {
     font: 60px/68px 'FFFTusjBold';
     display: inline;
     position: relative;
     top: 16px;
-    left: 80px;
 
     a {
-      color: #971E18;
+      color: #333;
     }
   }
 
   h2 {
     position: relative;
     top: -75px;
-    left: 380px;
+    left: 300px;
     font-size: 22px;
+    color: #F2B663;
   }
 
   height: 0px;
-
-  img#logo {
-    float: right;
-    margin: 24px 100px;
-    width: 198px;
-  }
 }
 
 section#main {
@@ -77,11 +101,11 @@ section#main {
   height: auto !important;
   height: 100%;
   background-image: url('clean_textile.png');
-  width: 67%;
-  margin-top: 100px;
+  width: 71%;
+  margin-top: 24px;
   padding: 25px 0 0 75px;
-  border-top: 2px solid #971E18;
-  border-right: 2px solid #971E18;
+  border-top: 2px solid #aaa;
+  border-right: 2px solid #aaa;
   float: left;
   @include box-shadow(3px 3px 5px #aaa);
   @include border-radius(0 35px 0 0);
@@ -104,24 +128,34 @@ section#content {
 }
 
 aside {
+  img#logo {
+    width: 160px;
+    margin-left: 56px;
+  }
+
   float: left;
   width: 300px;
   margin-left: 30px;
 
   section#hiring {
-    margin: 40px 0 0 28px;
+    margin-top: 24px;
+    color: #777;
+    a {
+      width: 280px;
+      padding: 8px 0 8px 0;
+    }
   }
 
   ul#social-media {
+    margin-top: 24px;
+    padding-left: 18px;
+
     li {
       display: inline;
       list-style: none;
-      margin-right: 4px;
+      margin-right: 16px;
 
       img {
-        width: 80px;
-        height: 80px;
-        opacity: 0.75;
       }
     }
   }

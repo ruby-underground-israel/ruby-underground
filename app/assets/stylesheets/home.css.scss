@@ -1,3 +1,10 @@
 // Place all the styles related to the home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+section#main {
+  p.lead {
+    width: 860px;
+    font-style: italic;
+    margin: 24px 0 36px 50px;
+  }
+}
