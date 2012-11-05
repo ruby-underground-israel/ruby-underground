@@ -9,7 +9,10 @@
   %p= markdown @job.description
 
   %p
+    %b Published:
+    = @job.created_at.strftime("%B %Y")
+  %p
     %b Contact email:
-    = @job.contact_email
+    = link_to @job.contact_email, "mailto:#{@job.contact_email}"
 
 = link_to 'Back', jobs_path
