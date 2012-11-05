@@ -244,6 +244,7 @@ PLATFORMS
 DEPENDENCIES
   activeadmin
   bootstrap-sass (~> 2.1.0.1)
+  bourbon
   browsernizer
   carrierwave
   chronic
