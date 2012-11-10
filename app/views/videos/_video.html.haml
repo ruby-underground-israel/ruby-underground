@@ -1,7 +1,8 @@
 %article.video.clearfix
   = image_tag video.thumbnail, class: "video-thumbnail"
-  %h2= link_to video.title, "http://www.youtube.com/watch?v=#{video.youtube_id}", target: "_blank"
-  %p
-    %strong Recorded:
-    %time= video.created_at
-  %p= video.description
+  .details
+    %h2= link_to video.title, "http://www.youtube.com/watch?v=#{video.youtube_id}", target: "_blank"
+    %p
+      %strong Recorded:
+      %time= video.created_at
+    %p= video.description

@@ -1,13 +1,5 @@
-@mixin slot {
-  img {
-    float: left;
-    margin-right: 20px;
-  }
-}
-article.event {
-  @include slot;
-}
+@import "mixins";
 
-article.video {
+article.event {
   @include slot;
 }
