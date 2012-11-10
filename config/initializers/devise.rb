@@ -233,4 +233,5 @@ Devise.setup do |config|
   # config.omniauth_path_prefix = "/my_engine/users/auth"
 
   config.omniauth :twitter, ENV['TWITTER_KEY'], ENV['TWITTER_SECRET']
+  config.omniauth :meetup, ENV['MEETUP_KEY'], ENV['MEETUP_SECRET']
 end

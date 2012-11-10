@@ -173,8 +173,14 @@ GEM
     omniauth (1.1.1)
       hashie (~> 1.2)
       rack
+    omniauth-meetup (0.0.5)
+      omniauth (~> 1.0)
+      omniauth-oauth2 (~> 1.0)
     omniauth-oauth (1.0.1)
       oauth
+      omniauth (~> 1.0)
+    omniauth-oauth2 (1.1.1)
+      oauth2 (~> 0.8.0)
       omniauth (~> 1.0)
     omniauth-twitter (0.0.13)
       multi_json (~> 1.3)
@@ -286,6 +292,7 @@ DEPENDENCIES
   jquery-rails
   oauth2
   omniauth
+  omniauth-meetup
   omniauth-twitter
   pg
   pry

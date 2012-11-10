@@ -40,6 +40,7 @@ gem 'devise'
 gem 'omniauth'
 gem 'oauth2'
 gem 'omniauth-twitter'
+gem 'omniauth-meetup'
 
 group :test do
   gem 'webmock', '~> 1.8.0'

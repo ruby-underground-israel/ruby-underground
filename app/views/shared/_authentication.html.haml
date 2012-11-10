@@ -4,6 +4,7 @@
   = link_to "(sign out)", destroy_user_session_path, method: 'delete'
 - else
   = link_to "Sign in", new_user_session_path
+  = link_to "Sign in with Meetup", user_omniauth_authorize_path(:meetup)
   = link_to "Sign in with Twitter", user_omniauth_authorize_path(:twitter)
   or
   =link_to "Sign up", new_user_registration_path
