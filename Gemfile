@@ -36,6 +36,7 @@ gem 'httparty'
 gem 'chronic'
 gem 'haml'
 gem 'browsernizer'
+gem 'devise'
 
 group :test do
   gem 'webmock'
