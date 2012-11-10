@@ -39,7 +39,7 @@ gem 'browsernizer'
 gem 'devise'
 
 group :test do
-  gem 'webmock'
+  gem 'webmock', '~> 1.8.0'
   gem 'vcr'
 end
 
