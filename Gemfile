@@ -37,6 +37,9 @@ gem 'chronic'
 gem 'haml'
 gem 'browsernizer'
 gem 'devise'
+gem 'omniauth'
+gem 'oauth2'
+gem 'omniauth-twitter'
 
 group :test do
   gem 'webmock', '~> 1.8.0'
