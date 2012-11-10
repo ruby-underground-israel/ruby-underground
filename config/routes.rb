@@ -1,4 +1,6 @@
 RubyUnderground::Application.routes.draw do
+  devise_for :users
+
   resources :videos, only: [:show, :index]
   resources :events, only: [:show, :index]
   resources :jobs, except: [:update, :destroy]
