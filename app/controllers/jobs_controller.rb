@@ -1,5 +1,5 @@
 class JobsController < ApplicationController
-  before_filter :authenticate_user!, only: :new
+  # before_filter :authenticate_user!, only: :new
 
   def index
     @jobs = Job.published.shuffle
