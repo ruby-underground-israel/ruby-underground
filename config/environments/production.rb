@@ -51,6 +51,16 @@ RubyUnderground::Application.configure do
   # Disable delivery errors, bad email addresses will be ignored
   # config.action_mailer.raise_delivery_errors = false
   config.action_mailer.default_url_options = { :host => 'www.rubyunderground.co.il' }
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.smtp_settings = {
+    address:               "smtp.gmail.com",
+    port:                  587,
+    domain:                'rauchy.net',
+    user_name:             'omer@rubyunderground.co.il',
+    password:              ENV['EMAIL_PASSWORD'],
+    authentication:        'login',
+    enable_starttls_auto:  true
+  }
 
   # Enable threaded mode
   # config.threadsafe!
